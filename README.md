@@ -1,6 +1,6 @@
 # WebHook Integrations for Nexus Platform
 
-To contribute back your own extensions please fork and submit a PR! For Questions feel free to reach out to - moose@sonatype.com?
+To contribute back your own extensions please fork and submit a PR! For Questions feel free to reach out to [Moose](mailto:moose@sonatype.com)
 
 There are a couple of different ways to deploy the IQ-Webhooks piece.  You can deploy it locally on a VM via a local go install or using a Docker Image.  This guide will cover both.  
 
@@ -10,12 +10,12 @@ This is a basic webhook listener that will consume events, and perform an IQ Lif
 
 ## What to download? 
 
-You will need to download a copy of the Nexus IQ CLI Scanner - available here - https://download.sonatype.com/clm/server/latest.tar.gz
+You will need to download a copy of the Nexus IQ CLI Scanner - available [here](https://download.sonatype.com/clm/server/latest.tar.gz)
 If you are running outside of docker you will need go runtime installed.
 
 ## Local Install
 
-Webhooks project from here - https://github.com/adnanh/webhook - once you follow these installation instructions you will need to ensure the webhook's is on your path. This has bit a couple of folks.
+Webhooks project from [here](https://github.com/adnanh/webhook) Credit to Adnanh! - once you follow these installation instructions you will need to ensure the webhook's is on your path. This has bit a couple of folks.
 
 ### Hooks & Scripts from this repository
 /hooks /scripts directories contain boiler plates starters.  If you build your own and would like to contribute them back please submit a PR!
