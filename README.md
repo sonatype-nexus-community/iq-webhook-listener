@@ -1,12 +1,12 @@
 # WebHook Integrations for Nexus Platform
 
-To contribute back your own extensions please fork and submit a PR! For Questions feel free to reach out to - moose/other@sonatype.com?
+To contribute back your own extensions please fork and submit a PR! For Questions feel free to reach out to - moose@sonatype.com?
 
 There are a couple of different ways to deploy the IQ-Webhooks piece.  You can deploy it locally on a VM via a local go install or using a Docker Image.  This guide will cover both.  
 
 ## What is this?
 
-This is a basic webhook listener that will consume events, and perform an IQ Lifecycle scan.  There is a listener configured to receive the IQ Server Scan response for future integrations. 
+This is a basic webhook listener that will consume events, and perform an IQ Lifecycle scan.  There is a listener configured to receive the IQ Server Scan response for future integrations. You will need to enable the [Automatic Applications feature in IQ Server](https://help.sonatype.com/iqserver/managing/application-management/managing-automatic-applications#app)
 
 ## What to download? 
 
@@ -16,7 +16,8 @@ If you are running outside of docker you will need go runtime installed.
 ## Local Install
 
 Webhooks project from here - https://github.com/adnanh/webhook - once you follow these installation instructions you will need to ensure the webhook's is on your path. This has bit a couple of folks.
-Hooks & Scripts from this repository - /hooks /scripts directories contain boiler plates starters.  If you build your own and would like to contribute them back please submit a PR!
+
+### Hooks & Scripts from this repository - /hooks /scripts directories contain boiler plates starters.  If you build your own and would like to contribute them back please submit a PR!
 
 ## Docker Image
 

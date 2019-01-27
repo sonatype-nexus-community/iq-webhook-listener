@@ -8,7 +8,7 @@ cd /etc/webhook;
 docker login nexus:18444 -u admin -p admin123
 docker pull nexus:18444/$3:$4
 docker save -o docker.tar nexus:18444/$3:$4
-java -jar nexus-iq-cli.jar -s http://iq-server:8070 -i juice-shop -a admin:admin123 docker.tar
+java -jar nexus-iq-cli.jar -s http://iq-server:8070 -i $4 -a admin:admin123 docker.tar
 ls -la
 rm docker.tar
 docker rmi nexus:18444/$3:$4
