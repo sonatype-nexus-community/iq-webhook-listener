@@ -63,9 +63,12 @@ If you'd like to use this with Docker Compose here an a start snippet for you to
 ### Configure IQ Server Webhook
 
 In order to configure the IQ Server to have a webhook back to this listener you could 
-![Screenshot](images/IQ-Server-WH.jpg)
+![IQ-Webhook](images/IQ-Server-WH.jpg)
 
 ### Configuring DockerHub Webhook
 
+![DockerHub-Webhook](images/DockerHub.jpg)
+
 ### Configuring NXRM Webhook
 
+[NXRM-Webhook](images/Repo-webhook.jpg)
