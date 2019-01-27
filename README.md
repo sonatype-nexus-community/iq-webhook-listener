@@ -17,7 +17,8 @@ If you are running outside of docker you will need go runtime installed.
 
 Webhooks project from here - https://github.com/adnanh/webhook - once you follow these installation instructions you will need to ensure the webhook's is on your path. This has bit a couple of folks.
 
-### Hooks & Scripts from this repository - /hooks /scripts directories contain boiler plates starters.  If you build your own and would like to contribute them back please submit a PR!
+### Hooks & Scripts from this repository
+/hooks /scripts directories contain boiler plates starters.  If you build your own and would like to contribute them back please submit a PR!
 
 ## Docker Image
 
