@@ -1,0 +1,23 @@
+[
+  {
+    "execute-command": "/etc/webhook/quay-consume.sh",
+    "id": "quay-consume",
+    "pass-arguments-to-command":  [
+      {
+        "source": "entire-payload"
+      },
+      {
+        "source": "payload",
+        "name": "docker_url"
+      },
+      {
+        "source": "payload",
+        "name": "repository"
+      },
+      {
+        "source": "payload",
+        "name": "updated_tags"
+      }
+    ]
+      }
+]
