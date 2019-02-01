@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "******* THIS IS A NEXUS REPO HOOK*******"
-echo "1 = ";$1
+echo $1
 echo $2
 echo $3
 echo $4
