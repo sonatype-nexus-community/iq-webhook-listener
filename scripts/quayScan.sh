@@ -13,7 +13,7 @@ doDockerScan () {
 	docker pull $1
 	docker save -o docker.tar $1
 	ls -lah
-	#java -jar nexus-iq-cli.jar -s http://iq-server:8070 -i $2 -a admin:admin123 docker.tar
+	java -jar nexus-iq-cli.jar -s http://iq-server:8070 -i $2 -a admin:admin123 docker.tar
 	rm docker.tar
 	docker rmi $1
 	ls -lah
