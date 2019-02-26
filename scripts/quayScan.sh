@@ -13,7 +13,7 @@ doDockerScan () {
 	docker pull $1
 	docker save -o docker.tar $1
 	ls -lah
-	java -jar nexus-iq-cli.jar -s http://iq-server:8070 -i $2 -a admin:admin123 docker.tar
+	#java -jar nexus-iq-cli.jar -s http://iq-server:8070 -i $2 -a admin:admin123 docker.tar
 	rm docker.tar
 	docker rmi $1
 	ls -lah
@@ -36,7 +36,23 @@ echo "~~~~~~~~~~~~~~~~~namespace~~~~~~~~~~~~~~~~~"
 echo $5 # namespace
 
 
+
+for tag in $trimmedTags ; do
+   echo "=== testing $tag ==="
+   if [[ -z "$tag" ]] ; then
+       echo "Tag invalid"
+   else
+      echo "Tag Valid - Doing Scan";
+  	  DockerPull=$URL/$5/$4:$tag;
+  	  echo $DockerPull
+  	  doDockerScan $DockerPull $4
+   fi
+done
+
+
+
+
 # Call of Function/Scan
-DockerPull=$URL/$5/$4:$trimmedTags
-doDockerScan $DockerPull $4
+
+#doDockerScan $DockerPull $4
 
