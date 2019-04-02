@@ -1,6 +1,6 @@
 [
   {
-    "execute-command": "/etc/webhook/quay-scan.sh",
+    "execute-command": "/etc/webhook/quayScan.sh",
     "id": "quay",
     "pass-arguments-to-command":  [
       {
@@ -22,11 +22,7 @@
       {
       	"source": "payload",
       	"name": "namespace"
-      },
-      {
-      	"source": "payload",
-      	"name": "repository"
       }
-    ]
+    ],
    }
 ]

@@ -74,3 +74,7 @@ In order to configure the IQ Server to have a webhook back to this listener you 
 ### Configuring NXRM Webhook
 
 ![NXRM-Webhook](images/Repo-webhook.jpg)
+
+### Configuring Quay Webhook
+
+![Quay-Webhook-Config](images/Quay-Webhook-Config.png)
