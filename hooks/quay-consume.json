@@ -1,7 +1,7 @@
 [
   {
-    "execute-command": "/etc/webhook/quay-consume.sh",
-    "id": "quay-consume",
+    "execute-command": "/etc/webhook/quay-scan.sh",
+    "id": "quay",
     "pass-arguments-to-command":  [
       {
         "source": "entire-payload"
@@ -12,12 +12,21 @@
       },
       {
         "source": "payload",
-        "name": "repository"
+        "name": "updated_tags"
       },
       {
         "source": "payload",
-        "name": "updated_tags"
+        "name": "name"
+
+      },
+      {
+      	"source": "payload",
+      	"name": "namespace"
+      },
+      {
+      	"source": "payload",
+      	"name": "repository"
       }
     ]
-      }
+   }
 ]
