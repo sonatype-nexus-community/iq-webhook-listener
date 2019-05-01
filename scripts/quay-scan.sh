@@ -53,15 +53,3 @@ for tag in $trimmedTags ; do
    fi
 done
 
-# Docker Scan Function to Call
-
-# doDockerScan () {
-# 	echo $1
-# 	docker pull $1
-# 	docker save -o docker.tar $1
-# 	ls -lah
-# 	java -jar nexus-iq-cli.jar -s http://iq-server:8070 -i $2 -a admin:admin docker.tar
-# 	rm docker.tar
-# 	docker rmi $1
-# 	ls -lah
-# }
